@@ -1,6 +1,15 @@
 # code/final
 
-Finished and clean code understandable by others than the original author too.
+Finished code used for article analysis and figures. 
 
-Document the various scripts and what are they supposed to do in this README. List inputs, outputs, parameters and requirements.
+Code is based on SQL queries of the COMHIS text reuse MariaDB database. 
 
+get_connection.R connects to the MariaDB database (username and password required)
+
+mandeville_non_mandeville.R (and .sql) calculates the coverage proportion (i.e. the total amount of overlap) of all Mandeville to non-Mandeville texts.
+
+mandeville_to_mandeville calculates the coverage proportion of Mandeville texts to other Mandeville texts. 
+
+The results of these are saved as intermediate .csv files, in Data -> Final. 
+
+mandeville_plots.R uses the raw coverages information to generate figures for publication. 
